@@ -1,0 +1,242 @@
+ html,
+ body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .topCon{
+  position: absolute;
+  width: 100%;
+  height: 5%;
+ }
+
+ .manageSocial {
+  z-index: 6;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  font-size: 50px; /* Adjust the size as needed */
+}
+
+.manageSocial:hover{
+  cursor: pointer;
+}
+
+
+ .menuBlind{
+  visibility: hidden;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(128, 128, 128, .5);
+ }
+
+ .socialMenu{
+  visibility: hidden;
+  z-index: 11;
+  position: absolute;
+  right: 37.5%;
+  top: 30%;
+  width: 25%;
+  height: 25%;
+  background-color: #13aa52;
+  text-align: center;
+  border-radius: 10px;
+ }
+
+ .socialMenuTitle{
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .joinRoomBtn, .createRoomBtn{
+  color: white;
+  margin: 4%;
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+ } 
+
+ .joinRoomBtn:hover, .createRoomBtn:hover{
+  cursor: pointer;
+ }
+
+ .createRoomBtn{
+  background-color: #365984;
+ }
+
+ .joinRoomBtn{
+  background-color: #c77e2c;
+ }
+
+ .roundOverMenu{
+  z-index: 10;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 40%;
+  background-color: rgb(128, 128, 128, 0.7);
+  text-align: center;
+  visibility: hidden;
+ }
+
+ .distanceTxt {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 10%;
+  color: white;
+  font-weight: bolder;
+  font-size: 2.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.roundOverMenuBtnCon{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0%;
+}
+
+.toggleViewBtn, .nextRoundBtn{
+  position: relative;
+  width: 15%;
+  height: 50%;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin: 1%;
+  border: none;
+  outline: none;
+}
+
+.toggleViewBtn:hover, .nextRoundBtn:hover{
+  cursor: pointer;
+}
+
+.nextRoundBtn{
+  background-color: #13aa52;
+}
+
+.toggleViewBtn{
+  background-color: #5a98e6;
+}
+
+#pano {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+ }
+
+
+ .mapCon{
+    position: absolute;
+    z-index: 4;
+    right: 5%;
+    bottom: 10%;
+    height: 25%;
+    width: 25%;
+ }
+
+ .mapConNoGuess:hover{
+    animation-name: expandMap;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+ }
+
+ .mapConGuessed{
+  right: 0%;
+  bottom: 0%;
+  height: 100% !important;
+  width: 100% !important;
+ }
+ 
+ #map{
+    position: absolute;
+   z-index: 4;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ #map:hover{
+    z-index: 2;
+ }
+ 
+ @keyframes expandMap{
+    from{
+        height: 25%;
+        width: 25%; 
+    }
+    to{
+        z-index: 2;
+        border: 8px solid #13aa52;
+        border-radius: 10px;
+        height: 80%;
+        width: 90%;
+    }
+ }
+ 
+.lockIn{
+    position: absolute;
+    right: 0%;
+    bottom: 35%;
+    z-index: 3;
+    width: 5%;
+    height: 30%;
+    background-color: white;
+    border: 3px solid grey;
+    border-right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 16px;
+    color: grey;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    writing-mode: vertical-rl;
+}
+
+.lockIn:hover{
+  z-index: 5;
+}
+
+.lockInActive {
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-37:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+
+.gm-style .gm-style-cc .gm-iv-address{
+  display: none;
+}

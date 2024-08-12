@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GeoGusserPlus</title>
+    <link rel="stylesheet" href="ranLoc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="topCon">
+    </div>
+
+    <div class="manageSocial fa fa-child" style="font-size: 50px;"></div>
+
+    <div class="menuBlind"></div>
+
+    <div class="socialMenu">
+      <div class="socialMenuTitle">Social</div>
+        <button class="createRoomBtn">Create Room</button>
+        <button class="joinRoomBtn">Join Room</button>
+    </div>
+
+    <div class="mapCon mapConNoGuess">
+      <div id="map"></div>
+      <button class="lockIn">Lock In</button>
+    </div>
+
+    <div class="roundOverMenu">
+      <div class="distanceTxt">You Were <span class="mileTxt">0 Miles</span> Away</div>
+      <!-- <div class="gameOverTxt">Game Over! Your Total Score Is </div> -->
+      <div class="roundOverMenuBtnCon">
+        <button class="toggleViewBtn">Street View</button>
+        <button class="nextRoundBtn">Next Round ></button>
+      </div>
+    </div>
+
+    <div id="pano" class="pano"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1QlkgSttfJs798f6J8eg3Bg3E6YYD07Q&callback=initialize&v=weekly"
+      defer
+    ></script>
+    <script src="randomLoc.js"></script>
+  </body>
+</html>
