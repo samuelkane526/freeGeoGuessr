@@ -14,6 +14,6 @@ To use the client it must be hosted in order to access the json file. To do this
 
 SERVER:
 The server runs using node.js.
-1. Install these packages using npm. `npm install express cors quick.db fs os`
+1. Install these packages using npm. `npm install express cors quick.db fs os better-sqlite3`
 2. Go to the directory /server.
 3. Run node server.js
